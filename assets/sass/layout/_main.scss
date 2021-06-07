@@ -1,0 +1,138 @@
+
+.hero-section__featured-image {
+  
+  padding-top: 3em;
+  background-image: url(/assets/img/imagen1.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+}
+  
+  
+.hero-section__main-content {
+ 
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-bottom: 3em;
+  
+  h1 {
+    padding-top: 1em;
+    margin: 0;
+    font-size: $xxx-large;
+    font-weight: $raleway-regular;
+  }
+  
+  p {
+    padding-top: 1.3em;
+    font-size: $large;
+    font-family: $raleway;
+    font-weight: $raleway-regular;
+    line-height: 2em;
+  }
+
+  span {
+    display: none;
+  }
+}
+  
+.hero-section__info_small {
+
+  padding: 1.8em 3em;
+  width: 90%;
+  background-color: $smoky-black;
+  color: $white;
+
+
+  h2 {
+    font-family: $old-standard;
+    font-size: $xx-large;
+  }
+
+  p {
+    padding-top: 0.4em;
+    padding-bottom: 0.5em;
+    font-size: $x-large;
+  }
+}
+
+
+.hero-section__info_medium {
+  
+  display: inline-block;
+  position: absolute;
+  padding: 1em;
+  width: 10%;
+  right: 0;
+
+  h3 {
+    color: $smoky-black;
+    font-size: $x-large;
+    transform: rotate(90deg);
+    padding-top: 0.1em;
+  }
+}
+
+
+@media (min-width: 768px) {
+ 
+.hero-section__featured-image {
+  height: 80vh;
+}
+  
+.hero-section__main-content {
+  margin-left: 5em;
+  margin-right: 3em;
+  margin-bottom: 3em;
+  width: 60%;
+
+  span {
+    display: inline;
+  }
+}
+  
+.hero-section__info_small {
+  padding: 1.8em 5em;
+  padding-bottom: 4em;
+  width: 93%;
+}
+
+.hero-section__info_medium {
+  width: 7%;
+ 
+    h3 {
+  
+    padding-top: 0.6em;
+    padding-left: 1.4em;
+    }
+  }
+
+}
+
+@media (min-width: 998px) {
+
+  .hero-section {
+    display: flex; 
+    flex-flow: row wrap;
+  } 
+
+  .hero-section__featured-image {
+
+    width: 51%;
+    height: auto;
+    order: 2;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .hero-section__container {
+    order: 1;
+    width: 49%;
+    display: inline-block;
+  }
+
+  .hero-section__info_medium {
+    right: 48.5%;
+    }
+}
